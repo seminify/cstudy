@@ -1,0 +1,6 @@
+services:
+  application:
+    image: gcc
+    volumes:
+      - .:/workspaces:cached
+    command: /bin/sh -c "apt-get update -qq && apt-get install cmake ninja-build -qq && apt-get clean && while sleep 1000; do :; done"

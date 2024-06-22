@@ -1,0 +1,21 @@
+{
+  "name": "cstudy",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "application",
+  "workspaceFolder": "/workspaces",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  },
+  "settings": {
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  }
+}
